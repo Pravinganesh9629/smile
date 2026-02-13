@@ -177,7 +177,7 @@ function App() {
 
           <div className="image-card">
             <img
-              src={config.media.loveYouBearGif}
+              src={`${import.meta.env.BASE_URL}${config.media.loveYouBearGif}`}
               alt="cute gif"
               loading="lazy"
             />
@@ -250,21 +250,21 @@ function App() {
             <div className="gift-card" onClick={handleGift1Click}>
               <h3 className="gift-title">Gift 1</h3>
               <div className="gift-image">
-                <img src={config.gifts.gift1} alt="gift 1" loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}${config.gifts.gift1}`} alt="gift 1" loading="lazy" />
               </div>
             </div>
 
             <div className="gift-card" onClick={handleGift2Click}>
               <h3 className="gift-title">Gift 2</h3>
               <div className="gift-image">
-                <img src={config.gifts.gift2} alt="gift 2" loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}${config.gifts.gift2}`} alt="gift 2" loading="lazy" />
               </div>
             </div>
 
             <div className="gift-card" onClick={handleGift3Click}>
               <h3 className="gift-title">Gift 3</h3>
               <div className="gift-image">
-                <img src={config.gifts.gift3} alt="gift 3" loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}${config.gifts.gift3}`} alt="gift 3" loading="lazy" />
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ function App() {
             <div className="all-gifts-opened">
               <div className="love-you-bear-container">
                 <img
-                  src={config.media.loveYouBearGif}
+                  src={`${import.meta.env.BASE_URL}${config.media.loveYouBearGif}`}
                   alt="love you bear"
                   loading="lazy"
                 />
@@ -318,7 +318,7 @@ function App() {
                 >
                   <div className="album-art">
                     <img
-                      src={currentSong.cover}
+                      src={`${import.meta.env.BASE_URL}${currentSong.cover}`}
                       alt="Album Cover"
                       loading="lazy"
                       className="album-image"
@@ -448,7 +448,7 @@ function App() {
           {/* Hidden audio element */}
           <audio
             ref={audioRef}
-            src={currentSong.audio}
+            src={`${import.meta.env.BASE_URL}${currentSong.audio}`}
             onTimeUpdate={handleTimeUpdate}
             onLoadedMetadata={handleLoadedMetadata}
             onEnded={handleEnded}
@@ -479,7 +479,7 @@ function App() {
               >
                 <div className={`photo-frame vintage-${index + 1}`}>
                   <img
-                    src={photo.image}
+                    src={`${import.meta.env.BASE_URL}${photo.image}`}
                     alt={`Memory ${index + 1}`}
                     loading="lazy"
                   />
@@ -521,7 +521,7 @@ function App() {
               <div className="envelope-body">
                 <div className="envelope-seal">
                   <span className="heart-symbol">
-                    {config.media.envelopeSeal}
+                    {`${import.meta.env.BASE_URL}${config.media.envelopeSeal}`}
                   </span>
                 </div>
               </div>
@@ -573,7 +573,7 @@ function App() {
           transition={{ duration: 0.6, ease: "backOut" }}
         >
           <motion.img
-            src={config.media.mainBearGif}
+            src={`${import.meta.env.BASE_URL}${config.media.mainBearGif}`}
             alt="cute bear"
             className="card-image"
             loading="lazy"
@@ -713,7 +713,7 @@ function App() {
                   <div className="pros-list">
                     <div className="pro-item">
                       <img
-                        src={slides[currentSlide].gif}
+                        src={`${import.meta.env.BASE_URL}${slides[currentSlide].gif}`}
                         alt="pro"
                         className="pro-gif"
                         loading="lazy"
@@ -730,7 +730,7 @@ function App() {
                       whileTap={{ scale: 0.9 }}
                     >
                       <img
-                        src={config.media.leftButton}
+                        src={`${import.meta.env.BASE_URL}${config.media.leftButton}`}
                         alt="previous"
                         className="nav-btn-img"
                       />
@@ -745,7 +745,7 @@ function App() {
                       whileTap={{ scale: 0.9 }}
                     >
                       <img
-                        src={config.media.rightButton}
+                        src={`${import.meta.env.BASE_URL}${config.media.rightButton}`}
                         alt="next"
                         className="nav-btn-img"
                       />
@@ -761,7 +761,7 @@ function App() {
                   <h3 className="card-title">❌ Cons</h3>
                   <div className="cons-content">
                     <img
-                      src={config.media.childGif}
+                      src={`${import.meta.env.BASE_URL}${config.media.childGif}`}
                       alt="child"
                       className="cons-gif"
                       loading="lazy"
